@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+
+}
+.left{
+    background-color:  #0C0E10;
+    height: 100vh; 
+    width: 25%;
+    position: sticky;
+    top: 0;
+}
+.right{
+    background-color: rgb(50, 48, 48);
+    width: 75%;
+}
+.first-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-part img{
+    width: 70%;
+}
+#slogan{
+    color:red;
+}
+#title{
+    font-size: 1.5rem;
+}
+.divider{
+    height:0.1px;
+    background-color: grey;
+    margin-top: 4%;  
+    margin-bottom: 3%;  
+}
+.second-part ol{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 20%;
+    font-size: 16px;
+    gap:2px;
+}
+.second-part p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    background-color:  #191D20;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    flex-grow: 1;
+    margin-right: 20px;
+    background-color:  #272A30;
+    border-radius: 5px;
+}
+.search i{
+    margin-right: 10px;
+    color:#424548;
+}
+.search input{
+    width: 100%;
+    background-color:  #272A30;
+    border: none;
+    color: white;
+    padding: 5px;
+} 
+.nav button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin-left: 10px;
+}
+.nav img{
+    width:50px;
+    height:45px;
+    margin-left: 20px;
+}
+
+.poster{
+    margin:15px;
+}
+.poster img{
+    width: 100%;
+}
+
+#menu-screen h1{
+    margin-left: 20px;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: #272A30;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative; 
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.menu-item button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(78, 70, 70);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #menu {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    #menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item button {
+        position: static; 
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
