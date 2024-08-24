@@ -20,7 +20,8 @@ async function getMenu() {
         price.innerText = `$${item.price.toFixed(2)}`;
 
         const addButton = document.createElement('button');
-        addButton.innerHTML = '<i class="fa-solid fa-plus"></i>';
+        // addButton.innerHTML = '<i class="fa-solid fa-plus"></i>';
+        addButton.innerHTML = '&#43;'
         addButton.classList.add('add-btn');
         
         itemDiv.appendChild(img);
